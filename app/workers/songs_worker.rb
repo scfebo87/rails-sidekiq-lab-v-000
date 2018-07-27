@@ -6,7 +6,6 @@ require 'csv'
       Song.create(title: file[0], artist_name: file[1])
     end
     redirect_to songs_path
-    end
-  end 
-  
+  end
 end 
+  
