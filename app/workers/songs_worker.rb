@@ -5,7 +5,6 @@ require 'csv'
     CSV.foreach(files, headers: true) do |file|
       Song.create(title: file[0], artist_name: file[1])
     end
-    redirect_to songs_path
   end
 end 
   
